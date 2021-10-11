@@ -37,9 +37,25 @@ $ geth
 
 ## 連上 Test Net 
 Test Net 有很多個，其中有一個 chain id 為 3 的網路叫做 “Ropsten。
-```
-$ geth --testnet
-```
+
+For testnets: use --ropsten, --rinkeby, --goerli instead (default: 1)
+
+- Ethereum mainnet
+    ```
+    $ geth --mainnet  
+    ```
+- Görli network: pre-configured proof-of-authority test network
+    ```
+    $ geth --goerli
+    ```
+- Rinkeby network: pre-configured proof-of-authority test network
+    ```
+    $ geth --rinkeby  
+    ```
+- Ropsten network: pre-configured proof-of-work test network
+    ```
+    $ geth --ropsten 
+    ```
 
 ## 刪除本機資料
 如果怕用完硬碟空間的話，可以把不用的帳本紀錄刪除，指令如下:
